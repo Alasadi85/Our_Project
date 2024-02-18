@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Protest+Strike&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Space Grotesk', sans-serif;
+}
+header{
+    background-color: #FFE4C9;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.logo{
+    color: #E78895;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #BED1CF;
+}
+.navigation a{
+    color: #E78895;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.navigation a.active{
+    color: #BED1CF;
+}
+.navigation a:hover{
+    color: #BED1CF;
+}
+
+.main{
+    padding: 80px 180px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/img.png), #FFF7F1;
+    background-position: 700px 60px;
+    background-repeat: no-repeat;
+    background-size: 36%;
+}
+.main h3,p{
+    color: #BED1CF;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.main h2{
+    color: #E78895;
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.btn, .about-btn{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 2px solid #0C2D57;
+    color: #BED1CF;
+    background-color: #E78895;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+.btn:hover,.about-btn:hover{
+    background-color: #e36d7d;
+    transform: scale(1.1, 1.1);
+}
+.social-contact a{
+    font-size: 1.5em;
+    color: #FFF7F1;
+    padding-right: 20px;
+}
+.about-content{
+    padding:80px 180px;
+    width: 100%;
+    min-height: 100vh;
+    background: #FFF7F1;
+    align-items: center;
+}
+.about-content h2{
+    color: #e36d7d;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.about-content p{
+    color: #BED1CF;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.skill-content{
+    padding: 80px 180px;
+    background-color: #FFF7F1;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+.skill-content h2{
+    color: #e36d7d;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.skill-content h3{
+    color: #BED1CF;
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.skill-content p{
+    color: #BED1CF;
+    font-size: 1.2em;
+}
+.card{
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 140px;
+    width: 140px;
+    border: 2px solid #0C2D57;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.card:hover{
+    border: 2px solid #e36d7d;
+}
+.card img{
+    height: 70px;
+    width: 70px;
+    padding-bottom: 5px;
+}
+
+.contact-box{
+    padding: 100px 100px;
+    background-color: #FFF7F1;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+.contact-box h2{
+    color: #e36d7d;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.info{
+    display: inline-flex;   
+    padding: 10px 10px;
+    margin: 40px 20px;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 240px;
+    width: 300px;
+    border: 2px solid #0C2D57;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.info:hover{
+    color: #0C2D57;
+    background-color: #e36d7d;
+    transform: scale(1.1, 1.1);
+}
+.info img{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 5px;
+}
+.info h3,p{
+    font-size: 20px;
+    color: #BED1CF; 
+}
+
+.footer{
+    background-color:#FFE4C9;
+    color: #BED1CF;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: auto;
+    }
+}
